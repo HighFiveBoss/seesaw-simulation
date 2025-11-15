@@ -25,7 +25,7 @@ plank.addEventListener("click", function (event) {
   const middlePlank = Math.floor(plank.offsetWidth / 2);
   const clickPosition = event.clientX;
   let position = Math.floor(clickPosition - rect.left);
-  if (event.clientX < middlePlank) {
+  if (position < middlePlank) {
     log.push(
       nextWeight + " kg dropped on left side at " + (position - middlePlank)
     );
