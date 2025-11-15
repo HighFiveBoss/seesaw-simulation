@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seesaw</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="container">
-        <div class="stats">
-            <span id="left-weight">0 KG</span>
-            <span id="right-weight">0 KG</span>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="stats">
+        <div class="stat-card">
+          <div class="label">LEFT WEIGHT</div>
+          <div id="left-weight" class="value">0 kg</div>
         </div>
+        <div class="stat-card">
+          <div class="label">NEXT WEIGHT</div>
+          <div id="next-weight" class="value">0 kg</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">RIGHT WEIGHT</div>
+          <div id="right-weight" class="value">0 kg</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">TILT ANGLE</div>
+          <div id="tilt-angle" class="value">0°</div>
+        </div>
+      </div>
+      <div class="stage">
         <div class="seesaw-container">
-            <div class="plank">
-                <div class="weights"></div>
-            </div>
-            <div class="pivot"></div>
+          <div class="plank">
+            <div class="weights"></div>
+          </div>
+          <div class="pivot"></div>
         </div>
+      </div>
+
+      <div class="reset-area">
+        <button id="reset">🔄 Reset Seesaw</button>
+      </div>
+
+      <div class="log-section">
+        <div id="log-box"></div>
+      </div>
     </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
